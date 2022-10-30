@@ -1,0 +1,107 @@
+body {
+    background-color: rgb(209, 209, 209);
+}
+.table-top {
+padding: 20px 25px;
+margin: 30px 0;
+background: #fff;
+border-radius: 3px;
+box-shadow: 0 1px 1px rgba(0,0,0,0.075);
+}
+.table-title {  
+padding: 16px 30px;
+margin: -20px -25px 10px;
+border-radius: 4px 4px 0 0;      
+padding-bottom: 15px;
+background-color: #464faf;
+color: #fff;
+}
+.table-title h2 {
+margin: 5px 0 0;
+font-size: 25px;
+}
+.bck-color1 {
+background-color: white;
+border-radius: 50%;
+padding: 2px 2px;
+color: #dc3545;
+font-size: 15px;
+}
+.bck-color2 {
+background-color: white;
+border-radius: 50%;
+padding: 2px 2px;
+color: #198754;
+font-size: 15px;
+}
+.text-align-right {
+text-align: right;
+}
+.text-decor {
+text-decoration: none;
+color: rgba(255, 202, 29, 0.637);
+font-size: 18px;
+}
+.text-decor:hover {
+color: rgba(255, 202, 29, 0.637);
+}
+.text-decor2 {
+text-decoration: none;
+color: #dc3545;
+font-size: 18px;
+}
+.text-decor2:hover {
+color: #dc3545;
+}
+.tbody-tr {
+transition: 0.3s;
+}
+.tbody-tr:hover {
+background-color: rgb(230, 230, 230);
+}
+a title {
+background-color: black;
+}
+.pagination {
+float: right;
+margin: 0 0 5px;
+}
+.page-a {
+font-size: 14px;
+min-width: 33px;
+min-height: 33px;
+color: #999;
+border: 1px solid rgb(176, 176, 176);
+margin: 0 1px;
+line-height: 33px;
+border-radius: 4px !important;
+text-align: center;
+padding: 0 5px;
+}
+.page-a:hover {
+color: rgb(130, 130, 130);
+}	
+.pagination li.active .page-a, .pagination li.active .page-a.page-link {
+background: #03A9F4;
+color: white !important;
+}
+.pagination li.active .page-a:hover {        
+background-color: #0397d6;
+color: white !important;
+}
+.justify-content-right {
+justify-content: right;
+}
+.text-align-left {
+text-align: left;
+}  
+.text-black {
+color: black;
+}
+.line {
+border: 1px solid gainsboro;
+width: 100%;
+}
+.modal-footer {
+background-color: rgb(223, 223, 223);
+}

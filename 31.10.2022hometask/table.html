@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="table-top">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-md-6">
+						<h2>Users' <b>Data</b></h2>
+                    </div>
+                    <div class="col-md-6 text-align-right">
+                        <button type="button" class="btn btn-danger me-2" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-minus me-2 bck-color1"></i>Delete</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div><p class="text-black fs-5 mt-3 text-align-left ms-3">Delete User</p><hr class="line"></div>
+                                <div><p class="text-black fs-6 mb-3 text-align-left ms-3">Are you sure you want to delete these Records?</p></div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                  <button type="button" class="btn btn-danger" id="remove">Delete</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        <button type="button" id="add" class="btn btn-success"><i class="fa-solid fa-plus me-2 bck-color2"></i>Add New Users</button>
+                    </div>
+                </div>
+            </div>
+            <table class="table mb-5">
+                <thead>
+                  <tr>
+                    <th><input type="checkbox"></th>
+                    <th>Name</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>City</th>
+                    <th>Company</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody class="t-body">
+                  <tr class="tbody-tr">
+                    <th><input type="checkbox"></th>
+                    <td>Yusif Huseynzade</td>
+                    <td>Yusif</td>
+                    <td>yhuseynzade31@gmail.com</td>
+                    <td>+994-55-227-05-53</td>
+                    <td>Baku</td>
+                    <td>Azersun Holding</td>
+                    <td><a href="#" class="text-decor" title="Edit"><i class="fa-solid fa-pen-to-square me-3"></i></a><a href="#" class="text-decor2" title="Delete" onclick="this.parentElement.parentElement.remove()"><i class="fa-solid fa-trash"></i></a></td>
+                  </tr>
+                </tbody>
+            </table>
+            <div class="row">
+                <div class="col-md-6">Showing <b>11</b> out of <b>51</b> entries</div>
+                <ul class="pagination col-md-6 justify-content-right">
+                    <li class="page"><a href="#" class="page-link page-a">Previous</a></li>
+                    <li class="page active"><a href="#" class="page-link page-a">1</a></li>
+                    <li class="page"><a href="#" class="page-link page-a">2</a></li>
+                    <li class="page"><a href="#" class="page-link page-a">3</a></li>
+                    <li class="page"><a href="#" class="page-link page-a">4</a></li>
+                    <li class="page"><a href="#" class="page-link page-a">5</a></li>
+                    <li class="page"><a href="#" class="page-link page-a">Next</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<script src="table.js"></script>      
+</body>
+</html>
