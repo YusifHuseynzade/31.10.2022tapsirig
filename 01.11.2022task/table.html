@@ -14,6 +14,15 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
+    <div class="container me-5 mt-3">
+    <label class="mb-3 ms-2 fs-4">Edit Users' Data(Please fill in all the blanks and click the edit button of the data you want to change)</label><br>
+    <input type="text" class="name_Input input_style" placeholder="Enter your name" required>
+    <input type="text" class="username_Input input_style" placeholder="Enter your username" required>
+    <input type="email" class="email_Input input_style" placeholder="Enter your email" required>
+    <input type="number" class="phone_Input input_style" placeholder="Enter your phone number" required>
+    <input type="text" class="address_Input input_style" placeholder="Enter your address(City)" required>
+    <input type="text" class="companyName_Input input_style" placeholder="Enter the name of the company you work for" required>
+    </div>
     <div class="container">
         <div class="table-top">
             <div class="table-title">
@@ -22,24 +31,12 @@
 						<h2>Users' <b>Data</b></h2>
                     </div>
                     <div class="col-md-6 text-align-right">
-                        <button type="button" class="btn btn-danger me-2" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-minus me-2 bck-color1"></i>Delete</button>
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div><p class="text-black fs-5 mt-3 text-align-left ms-3">Delete User</p><hr class="line"></div>
-                                <div><p class="text-black fs-6 mb-3 text-align-left ms-3">Are you sure you want to delete these Records?</p></div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                                  <button type="button" class="btn btn-danger" id="remove">Delete</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                        <button type="button" class="btn btn-danger me-2 delBtn"><i class="fa-solid fa-minus me-2 bck-color1"></i>Delete</button>
                         <button type="button" id="add" class="btn btn-success"><i class="fa-solid fa-plus me-2 bck-color2"></i>Add New Users</button>
                     </div>
                 </div>
             </div>
-            <table class="table mb-5">
+            <table id="tableEdit" class="table mb-5">
                 <thead>
                   <tr>
                     <th><input type="checkbox"></th>
@@ -54,19 +51,19 @@
                 </thead>
                 <tbody class="t-body">
                   <tr class="tbody-tr">
-                    <th><input type="checkbox"></th>
+                    <!-- <th><input type="checkbox"></th>
                     <td>Yusif Huseynzade</td>
                     <td>Yusif</td>
                     <td>yhuseynzade31@gmail.com</td>
                     <td>+994-55-227-05-53</td>
                     <td>Baku</td>
                     <td>Azersun Holding</td>
-                    <td><a href="#" class="text-decor" title="Edit"><i class="fa-solid fa-pen-to-square me-3"></i></a><a href="#" class="text-decor2" title="Delete" onclick="this.parentElement.parentElement.remove()"><i class="fa-solid fa-trash"></i></a></td>
+                    <td><button class="text-decor fs-6" title="Edit" id="edit"><i class="fa-solid fa-pen-to-square me-2 fs-6"></i>Edit</button><button class="text-decor2 fs-6" title="Delete" onclick="this.parentElement.parentElement.remove()"><i class="fa-solid fa-trash me-2 fs-6"></i>Delete</button></td> -->
                   </tr>
                 </tbody>
             </table>
             <div class="row">
-                <div class="col-md-6">Showing <b>11</b> out of <b>51</b> entries</div>
+                <div class="col-md-6">Showing <b>10</b> out of <b>50</b> entries</div>
                 <ul class="pagination col-md-6 justify-content-right">
                     <li class="page"><a href="#" class="page-link page-a">Previous</a></li>
                     <li class="page active"><a href="#" class="page-link page-a">1</a></li>

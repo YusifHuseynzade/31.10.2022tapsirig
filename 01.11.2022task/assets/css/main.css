@@ -38,20 +38,29 @@ font-size: 15px;
 text-align: right;
 }
 .text-decor {
-text-decoration: none;
-color: rgba(255, 202, 29, 0.637);
-font-size: 18px;
+    padding: 3px 6px;
+    border: 1px solid rgb(151, 141, 10);
+    background-color: rgb(151, 142, 18);
+    color: white;
+    font-size: 18px;
+    margin-right: 8px;
+    border-radius: 8px;
+    transition: 0.3s;
 }
 .text-decor:hover {
-color: rgba(255, 202, 29, 0.637);
+background-color: rgb(103, 97, 22);
 }
 .text-decor2 {
-text-decoration: none;
-color: #dc3545;
+padding: 3px 6px;
+border-radius: 8px;
+border: 1px solid #dc3545;
+background-color: #dc3545;
+color: white;
 font-size: 18px;
+transition: 0.3s;
 }
 .text-decor2:hover {
-color: #dc3545;
+background-color: #82252e;
 }
 .tbody-tr {
 transition: 0.3s;
@@ -104,4 +113,10 @@ width: 100%;
 }
 .modal-footer {
 background-color: rgb(223, 223, 223);
+}
+.input_style {
+    border-radius: 5px;
+    margin-left: 5px;
+    height: 35px;
+    border: 1px solid rgb(179, 179, 179);
 }
